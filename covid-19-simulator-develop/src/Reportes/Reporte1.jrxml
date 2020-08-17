@@ -1,0 +1,704 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report name" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="0d0572f6-ea69-4dfa-a8da-53964d5bc7de">
+	<property name="ireport.zoom" value="1.5"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="383"/>
+	<style name="table">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 1">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 1_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 1_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 1_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Crosstab Data Text" hAlign="Center"/>
+	<style name="table 2">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 2_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 2_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 2_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 3">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 3_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 3_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 3_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 4">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 4_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 4_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 4_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+		<conditionalStyle>
+			<conditionExpression><![CDATA[new Boolean($V{REPORT_COUNT}.intValue()%2==0)]]></conditionExpression>
+			<style backcolor="#EFF7FF"/>
+		</conditionalStyle>
+	</style>
+	<style name="table 5">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 5_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 5_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 5_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 6">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 6_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 6_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 6_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 7">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 7_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 7_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 7_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 8">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 8_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 8_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 8_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 9">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 9_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 9_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 9_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 10">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 10_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 10_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 10_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<subDataset name="dataset1" uuid="0b386453-6196-4cbf-8a46-3e53a948bc4f">
+		<field name="_THIS" class="java.lang.String"/>
+	</subDataset>
+	<subDataset name="Dataset 2" uuid="fb55a9ee-9848-498a-ba24-cb005f36b165">
+		<field name="_THIS" class="java.lang.String"/>
+	</subDataset>
+	<subDataset name="Dataset 5" uuid="95bc55eb-cd67-4096-9ba2-e341f86f5f52">
+		<field name="_THIS" class="java.lang.Integer"/>
+	</subDataset>
+	<subDataset name="Dataset 3" uuid="4fa0d6f6-fec9-406a-b60f-cb363e9b938e">
+		<field name="_THIS" class="java.lang.String"/>
+	</subDataset>
+	<subDataset name="Dataset 4" uuid="3295d61f-69c1-4d19-b564-b9da66df33df">
+		<field name="_THIS" class="java.lang.String"/>
+	</subDataset>
+	<parameter name="Titulo" class="java.lang.String">
+		<defaultValueExpression><![CDATA["REPORTE COVID-19"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="poblacion" class="java.lang.String"/>
+	<parameter name="tiempoSimu" class="java.lang.String"/>
+	<parameter name="personasInfectadas" class="java.lang.String"/>
+	<parameter name="tasaInteraccion" class="java.lang.String"/>
+	<parameter name="tasaMortalidad" class="java.lang.String"/>
+	<parameter name="duracionMedia" class="java.lang.String"/>
+	<parameter name="probContagio" class="java.lang.String"/>
+	<parameter name="tasaRecuperacion" class="java.lang.String"/>
+	<parameter name="tasaVacunacion" class="java.lang.String"/>
+	<parameter name="poblacionContagiada" class="java.lang.String"/>
+	<parameter name="poblacionInfectada" class="java.lang.String"/>
+	<parameter name="poblacionRecuperada" class="java.lang.String"/>
+	<parameter name="poblacionFallecida" class="java.lang.String"/>
+	<parameter name="poblacionVacunada" class="java.lang.String"/>
+	<parameter name="poblacionNoAfectada" class="java.lang.String"/>
+	<parameter name="cantContagiada" class="java.lang.Number"/>
+	<parameter name="cantInfectados" class="java.lang.Number"/>
+	<parameter name="cantRecuperados" class="java.lang.Number"/>
+	<parameter name="cantFallecidos" class="java.lang.Number"/>
+	<parameter name="cantVacunados" class="java.lang.Number"/>
+	<parameter name="parameter1" class="java.util.List">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="parameter2" class="java.util.List"/>
+	<parameter name="parameter3" class="java.util.List"/>
+	<parameter name="parameter4" class="java.util.List"/>
+	<parameter name="parameter5" class="java.util.List"/>
+	<variable name="variable1" class="java.util.Collection"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="48" splitType="Stretch">
+			<staticText>
+				<reportElement mode="Opaque" x="112" y="6" width="314" height="37" uuid="95e023f5-5e6a-46ea-a30c-df7c0a83d4bb"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Tahoma" size="28" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[REPORTE COVID-19]]></text>
+			</staticText>
+		</band>
+	</title>
+	<detail>
+		<band height="680" splitType="Stretch">
+			<textField>
+				<reportElement x="171" y="44" width="155" height="16" uuid="5fa7d927-cec3-48b8-a130-32777bf25b0c"/>
+				<textElement>
+					<font size="10" isItalic="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{poblacion}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="23" y="10" width="145" height="21" uuid="100df030-ed54-47e2-a8a4-564ee1e7c07f"/>
+				<textElement>
+					<font fontName="Tahoma" size="14" isBold="true" isItalic="true" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[Datos Ingresados]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="28" y="44" width="79" height="16" uuid="d9a148de-b754-42d5-8f21-62df3be587ff"/>
+				<textElement>
+					<font size="10" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Población]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="28" y="60" width="131" height="16" uuid="2c8b195e-c591-4645-8c0e-e6d59aecba47"/>
+				<textElement>
+					<font size="10" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Tiempo de Simulación]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="28" y="76" width="128" height="16" uuid="5ad91c35-fded-47b1-a34f-018f0146d125"/>
+				<textElement>
+					<font size="10" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Personas Infectadas]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="28" y="92" width="128" height="16" uuid="c84990d4-5f33-4a21-a748-d24b39fb95ce"/>
+				<textElement>
+					<font size="10" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Tasa de Interacción]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="28" y="108" width="128" height="16" uuid="2fb4be43-8fa7-4fcf-bec1-dd6bbb10e7a5"/>
+				<textElement>
+					<font size="10" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Tasa de Mortalidad]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="326" y="60" width="100" height="16" uuid="3e3f9487-d27a-4d2f-aa2c-eb5277b44e5d"/>
+				<textElement>
+					<font size="10" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Duración Media]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="326" y="76" width="131" height="16" uuid="dc9068cd-6c22-4804-a34e-d7aeb0093e3c"/>
+				<textElement>
+					<font size="10" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Probabilidad de Contagio]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="326" y="92" width="131" height="16" uuid="427e8f7d-9515-4a66-b2d4-257efb4c5274"/>
+				<textElement>
+					<font size="10" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Tasa de Recuperación]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="326" y="108" width="131" height="16" uuid="31fc3392-9d7d-44d6-862e-c8adb0622f17"/>
+				<textElement>
+					<font size="10" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Tasa de Vacunación]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="171" y="60" width="118" height="16" uuid="5d4adce8-6f1e-4d9d-a478-70e52f63fa4c"/>
+				<textElement>
+					<font size="10" isItalic="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{tiempoSimu}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="171" y="76" width="118" height="16" uuid="521d2e3a-46d7-46cc-8033-eb829f9c33a1"/>
+				<textElement>
+					<font size="10" isItalic="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{personasInfectadas}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="171" y="92" width="118" height="16" uuid="8d2fe34b-1936-414a-b736-0a802f02f384"/>
+				<textElement>
+					<font size="10" isItalic="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{tasaInteraccion}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="171" y="108" width="118" height="16" uuid="6cae3ed4-029b-442e-b9a3-d40aea797b66"/>
+				<textElement>
+					<font size="10" isItalic="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{tasaMortalidad}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="468" y="60" width="85" height="16" uuid="1eca7b1b-1dc4-4c9c-aaaa-cc17c50f9925"/>
+				<textElement>
+					<font size="10" isItalic="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{duracionMedia}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="468" y="76" width="84" height="16" uuid="f9379f0f-e731-4277-a0bb-e8b4225b6da5"/>
+				<textElement>
+					<font size="10" isItalic="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{probContagio}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="468" y="92" width="84" height="16" uuid="068d7d7f-0cd0-4389-acc3-b9b0e418d96d"/>
+				<textElement>
+					<font size="10" isItalic="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{tasaRecuperacion}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="468" y="109" width="86" height="15" uuid="74d16995-eede-468c-a038-295396a05616"/>
+				<textElement>
+					<font size="10" isItalic="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{tasaVacunacion}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement mode="Transparent" x="23" y="151" width="204" height="20" uuid="8676b8a3-2421-4ac2-928b-0142f737a3fa"/>
+				<textElement markup="none">
+					<font fontName="Tahoma" size="14" isBold="true" isItalic="true" isUnderline="false" isPdfEmbedded="false"/>
+				</textElement>
+				<text><![CDATA[Resultados Obtenidos]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="28" y="182" width="131" height="17" uuid="2a3e5b99-c5ca-464c-8cf2-3746b1550b75"/>
+				<textElement>
+					<font size="10" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Población Total Contagiada]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="28" y="199" width="131" height="17" uuid="5e9a49c2-0b62-4624-8d63-87187103ae93"/>
+				<textElement>
+					<font size="10" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Población Total Infectada]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="28" y="216" width="131" height="17" uuid="a625b498-88d2-4924-8efb-65c736da8b23"/>
+				<textElement>
+					<font size="10" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Población Total Recuperada]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="28" y="233" width="131" height="17" uuid="2871cdf8-7abf-4b86-bd89-cf5807842c15"/>
+				<textElement>
+					<font size="10" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Población Total Fallecida]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="28" y="251" width="131" height="17" uuid="b8808d44-d820-4e3d-8088-5142e1ba05c1"/>
+				<textElement>
+					<font size="10" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Población Total Vacunada]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="28" y="268" width="131" height="16" uuid="b4f961f4-4b3d-4178-9c55-91f34c616e53"/>
+				<textElement>
+					<font size="10" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Población No Afectada]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="171" y="182" width="100" height="17" uuid="f7b5e208-3409-47ca-880c-a5496401a768"/>
+				<textElement>
+					<font size="10" isItalic="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{poblacionContagiada}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="171" y="199" width="100" height="17" uuid="f56f74d0-95b0-4526-a102-f557ef993185"/>
+				<textElement>
+					<font size="10" isItalic="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{poblacionInfectada}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="171" y="216" width="100" height="17" uuid="3bb39468-377c-4afb-a022-6eb3c79d90c9"/>
+				<textElement>
+					<font size="10" isItalic="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{poblacionRecuperada}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="171" y="233" width="100" height="17" uuid="be526c58-c28a-4833-972d-e5eb1a8dd157"/>
+				<textElement>
+					<font size="10" isItalic="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{poblacionFallecida}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="171" y="250" width="100" height="18" uuid="9a6e0d8c-cb82-4e2f-b8cb-150c459bdd5d"/>
+				<textElement>
+					<font size="10" isItalic="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{poblacionVacunada}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="171" y="268" width="100" height="16" uuid="56fa7862-a7af-4f60-8702-7e29ab39155f"/>
+				<textElement>
+					<font size="10" isItalic="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{poblacionNoAfectada}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="28" y="334" width="159" height="20" uuid="322c4fa1-609d-41ea-aa53-f41d662937e6"/>
+				<textElement>
+					<font fontName="Tahoma" size="14" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Tabla de Resultados]]></text>
+			</staticText>
+			<elementGroup/>
+			<bar3DChart>
+				<chart>
+					<reportElement x="271" y="135" width="284" height="199" uuid="04fb87bb-3439-43a1-a903-d831de524f8d"/>
+					<chartTitle/>
+					<chartSubtitle/>
+					<chartLegend/>
+				</chart>
+				<categoryDataset>
+					<categorySeries>
+						<seriesExpression><![CDATA["Total Contagiados"]]></seriesExpression>
+						<categoryExpression><![CDATA[""]]></categoryExpression>
+						<valueExpression><![CDATA[$P{cantContagiada}]]></valueExpression>
+					</categorySeries>
+					<categorySeries>
+						<seriesExpression><![CDATA["Infectados"]]></seriesExpression>
+						<categoryExpression><![CDATA[""]]></categoryExpression>
+						<valueExpression><![CDATA[$P{cantInfectados}]]></valueExpression>
+					</categorySeries>
+					<categorySeries>
+						<seriesExpression><![CDATA["Recuperados"]]></seriesExpression>
+						<categoryExpression><![CDATA[""]]></categoryExpression>
+						<valueExpression><![CDATA[$P{cantRecuperados}]]></valueExpression>
+					</categorySeries>
+					<categorySeries>
+						<seriesExpression><![CDATA["Fallecidos"]]></seriesExpression>
+						<categoryExpression><![CDATA[""]]></categoryExpression>
+						<valueExpression><![CDATA[$P{cantFallecidos}]]></valueExpression>
+					</categorySeries>
+					<categorySeries>
+						<seriesExpression><![CDATA["Vacunados"]]></seriesExpression>
+						<categoryExpression><![CDATA[""]]></categoryExpression>
+						<valueExpression><![CDATA[$P{cantVacunados}]]></valueExpression>
+					</categorySeries>
+				</categoryDataset>
+				<bar3DPlot>
+					<plot/>
+					<itemLabel/>
+					<categoryAxisFormat>
+						<axisFormat/>
+					</categoryAxisFormat>
+					<valueAxisFormat>
+						<axisFormat/>
+					</valueAxisFormat>
+				</bar3DPlot>
+			</bar3DChart>
+			<elementGroup>
+				<elementGroup/>
+			</elementGroup>
+			<elementGroup/>
+			<componentElement>
+				<reportElement key="table 6" style="table 6" x="139" y="366" width="92" height="294" uuid="b6d154d4-8a29-43e2-98df-103bf3eeed2d"/>
+				<jr:table xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd">
+					<datasetRun subDataset="dataset1" uuid="c9897d7a-c23e-4308-a282-e51d9e37ffb4">
+						<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($P{parameter1})]]></dataSourceExpression>
+					</datasetRun>
+					<jr:column width="92" uuid="ec7cb50c-abce-415a-bb59-3584e947b606">
+						<jr:columnHeader style="table 6_CH" height="14" rowSpan="1">
+							<staticText>
+								<reportElement x="23" y="0" width="51" height="14" uuid="546147a4-7ea5-4426-b256-2e1b31101997"/>
+								<textElement>
+									<font isBold="true" isItalic="true"/>
+								</textElement>
+								<text><![CDATA[Infectados]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="table 6_TD" height="13" rowSpan="1">
+							<textField>
+								<reportElement x="33" y="0" width="41" height="13" uuid="da7214f1-bbd7-4aa3-941b-9e26794643bd"/>
+								<textFieldExpression><![CDATA[$F{_THIS}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+				</jr:table>
+			</componentElement>
+			<componentElement>
+				<reportElement key="table 7" style="table 7" x="227" y="366" width="92" height="294" uuid="74375bc1-709f-4a67-a493-2956c21769b0"/>
+				<jr:table xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd">
+					<datasetRun subDataset="Dataset 2" uuid="f134b5bc-6b7e-441e-b1aa-165d4b842310">
+						<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($P{parameter2})]]></dataSourceExpression>
+					</datasetRun>
+					<jr:column width="92" uuid="b2260c9b-f8ae-4759-a446-e42fe8c5665d">
+						<jr:columnHeader style="table 7_CH" height="14" rowSpan="1">
+							<staticText>
+								<reportElement x="15" y="0" width="65" height="14" uuid="8d156139-1dd4-4726-a10b-16e1e13fbec6"/>
+								<textElement>
+									<font isBold="true" isItalic="true"/>
+								</textElement>
+								<text><![CDATA[Recuperados]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="table 7_TD" height="13" rowSpan="1">
+							<textField>
+								<reportElement x="33" y="0" width="47" height="13" uuid="d8148b77-bf54-429d-87d8-87db613cbec9"/>
+								<textFieldExpression><![CDATA[$F{_THIS}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+				</jr:table>
+			</componentElement>
+			<componentElement>
+				<reportElement key="table 8" style="table 8" x="47" y="366" width="92" height="294" uuid="4cd236d1-356e-41d3-a803-c592a84c6a76"/>
+				<jr:table xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd">
+					<datasetRun subDataset="Dataset 5" uuid="46699b07-513c-4811-ba35-da6bbe0e4288">
+						<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($P{parameter5})]]></dataSourceExpression>
+					</datasetRun>
+					<jr:column width="92" uuid="eb7f78ba-ef5d-4a8a-8b6d-3193dcf0b84f">
+						<jr:columnHeader style="table 8_CH" height="14" rowSpan="1">
+							<staticText>
+								<reportElement x="30" y="0" width="35" height="13" uuid="65848df0-8a11-4416-87de-8dfc877817a6"/>
+								<textElement textAlignment="Center">
+									<font isBold="true" isItalic="true"/>
+								</textElement>
+								<text><![CDATA[ Días]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="table 8_TD" height="13" rowSpan="1">
+							<textField>
+								<reportElement x="40" y="0" width="15" height="13" uuid="8d01ce04-44dc-49ca-a382-0b522d8a23db"/>
+								<textFieldExpression><![CDATA[$F{_THIS}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+				</jr:table>
+			</componentElement>
+			<componentElement>
+				<reportElement key="table 9" style="table 9" x="319" y="366" width="92" height="294" uuid="06a2deee-b0fb-4995-aa43-6ae912a08cb7"/>
+				<jr:table xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd">
+					<datasetRun subDataset="Dataset 3" uuid="0cd20485-dc5d-4f61-aad0-0190af2f5ca7">
+						<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($P{parameter3})]]></dataSourceExpression>
+					</datasetRun>
+					<jr:column width="92" uuid="6fc3023d-a48b-49ee-b2d7-d981761bb86c">
+						<jr:columnHeader style="table 9_CH" height="14" rowSpan="1">
+							<staticText>
+								<reportElement x="24" y="0" width="51" height="14" uuid="9d63c917-68af-4c17-b664-e12f015b4c1e"/>
+								<textElement>
+									<font isBold="true" isItalic="true"/>
+								</textElement>
+								<text><![CDATA[Fallecidos]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="table 9_TD" height="13" rowSpan="1">
+							<textField>
+								<reportElement x="36" y="0" width="39" height="13" uuid="b7e50133-2807-4c0d-84e7-675bbeb06eb4"/>
+								<textFieldExpression><![CDATA[$F{_THIS}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+				</jr:table>
+			</componentElement>
+			<componentElement>
+				<reportElement key="table 10" style="table 10" x="411" y="366" width="92" height="294" uuid="b90d226a-2494-48bd-8c2c-6c03fdab16d5"/>
+				<jr:table xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd">
+					<datasetRun subDataset="Dataset 4" uuid="1fbb2423-7df4-4e40-a465-7a6db5e9ded7">
+						<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($P{parameter4})]]></dataSourceExpression>
+					</datasetRun>
+					<jr:column width="92" uuid="a43c582b-de25-442b-ac06-994c90b1c463">
+						<jr:columnHeader style="table 10_CH" height="14" rowSpan="1">
+							<staticText>
+								<reportElement x="20" y="0" width="55" height="13" uuid="06562591-453d-4d67-9b7f-3e7e75c970dd"/>
+								<textElement>
+									<font isBold="true" isItalic="true"/>
+								</textElement>
+								<text><![CDATA[Vacunados]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="table 10_TD" height="13" rowSpan="1">
+							<textField>
+								<reportElement x="33" y="0" width="42" height="13" uuid="2121552e-35cb-461d-8fdf-304cfadb949e"/>
+								<textFieldExpression><![CDATA[$F{_THIS}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+				</jr:table>
+			</componentElement>
+		</band>
+	</detail>
+	<summary>
+		<band height="10" splitType="Stretch"/>
+	</summary>
+</jasperReport>
